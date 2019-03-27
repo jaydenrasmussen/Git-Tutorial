@@ -22,7 +22,7 @@ NOTE: For more detail on any of these verbs you can apply the `--help` flag for 
 - `log` - prints out a log of all the commits for that repository (`q` to quit).
 - `push` - syncs the commits that were made locally to the remote
 - `pull` - syncs the local repository with the changes that exist in the remote
-- `reset` - unstages files that were made locally to a commit/hash
+- `reset` - unstages changes that were made locally to a commit/hash
 - `branch` - creates and lists branches
 - `merge` - merges branches or commits together
 - `status` - shows the current status of the repo
@@ -61,6 +61,7 @@ NOTE: For more detail on any of these verbs you can apply the `--help` flag for 
 - `patches` 
   - `format-patch` - will output git readable patch information for the changes between one branch and another, or one commit and another
   - `apply` - will add those patches into your branch, this is the manual way to do a merge, but will let you pull out changes that occurred in say, just one commit
+  - `am` - an alternative to apply which is slightly more powerful and actually automatically creates a commit after applying the change
 
 - `submodule` - (yo dawg. I heard you like git repos...) This lets you initialize and control repos that exist inside of your repo, but have different urls
 
